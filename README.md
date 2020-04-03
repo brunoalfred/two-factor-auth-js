@@ -1,3 +1,7 @@
 # Node.js
 
-![alt logo](https://nodejs.org/static/images/logo.svg "node logo")
+![alt logo]( "node logo")
+
+<p align="center">
+  <img scr="https://nodejs.org/static/images/logo.svg" />
+</p>
