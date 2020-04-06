@@ -10,4 +10,6 @@ var say_name = function () {
     console.log('I\'m Bruno ...');
 }
 
-function (say_name) { say_name(); }
+function call_function (fun){
+    fun();
+}
