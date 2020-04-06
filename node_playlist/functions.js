@@ -13,3 +13,6 @@ var say_name = function () {
 function call_function (fun){
     fun();
 }
+
+
+call_function(say_name);
