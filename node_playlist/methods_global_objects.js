@@ -1,7 +1,5 @@
 // Global Objects means are available in all the modules. 
 
-var time = 0;
-setInterval(function () {
-    time += 2;
-    console.log(time + " seconds have passed");
-}, 2000);
+
+console.log(__dirname);
+console.log(__filename);
