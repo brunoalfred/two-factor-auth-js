@@ -10,4 +10,5 @@ var summation = function (a, b) {
 
 var pi = 3.143;
 
-module.exports = call_names;
+module.exports.call_names = call_names;
+module.exports.summation = summation;
