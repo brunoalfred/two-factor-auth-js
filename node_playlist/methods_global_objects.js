@@ -1,6 +1,7 @@
-// Global Objects means are available in all the modules
+// Global Objects means are available in all the modules. 
 
-setTimeout(function () {
-    console.log('delay for 3 seconds');
-},
-    3000);
+var time = 0;
+setInterval(function () {
+    time += 2;
+    console.log(time + " seconds have passed");
+}, 2000);
