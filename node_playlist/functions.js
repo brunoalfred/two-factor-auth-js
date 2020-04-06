@@ -1,7 +1,13 @@
-// normal function declaration techinique
+// // normal function declaration techinique
 
-function sayHi() {
-    console.log('hi');
+// function sayHi() {
+//     console.log('hi');
+// }
+
+// sayHi();
+
+var say_name = function() {
+    console.log('I\'m Bruno ...' );
 }
 
-sayHi();
+say_name();
