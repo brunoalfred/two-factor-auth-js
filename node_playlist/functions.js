@@ -6,8 +6,8 @@
 
 // sayHi();
 
-var say_name = function() {
-    console.log('I\'m Bruno ...' );
+var say_name = function () {
+    console.log('I\'m Bruno ...');
 }
 
-say_name();
+function (say_name) { say_name(); }
