@@ -1,10 +1,8 @@
 var events = require('events');
+var util = require('util');
 
-var myEmitter = new events.EventEmitter();
+var person = function (name) {
+    this.name;
+};
 
-myEmitter.on('someEvent', function(message){
-    console.log(message);
-});
-
-myEmitter.emit('someEvent', 'the event was emmited');
-
+util.inherits(person, events.EventEmitter)
