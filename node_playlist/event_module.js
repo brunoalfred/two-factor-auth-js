@@ -1,3 +1,3 @@
 var events = require('events');
 
-element.on('click', function(){});
+var myEmitter = new events.EventEmitter();
