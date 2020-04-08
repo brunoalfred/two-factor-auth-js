@@ -1,6 +1,6 @@
 console.log('hello ');
 
-process.exit(0);
+process.exitCode = 1;
 
 
 console.log('exit');
