@@ -1,6 +1,7 @@
-console.log('hello ');
+const express = require('express');
 
-process.exit(0);
+const app = express();
 
+app.get ('/', (req, res) => {res.send('Hi')});
 
-console.log('exit');
+app.listen(3000, () => console.log('server ready'));
