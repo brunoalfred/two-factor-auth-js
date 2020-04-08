@@ -1,3 +1,4 @@
 const car = {
-    brand: 'Ford'
+    brand: 'Ford',
+    model: 'Fiesta'
 }
