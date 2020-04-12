@@ -1,10 +1,3 @@
-
 var fs = require('fs');
 
-
-var result = fs.readFileSync('./file.txt', 'utf8');
-
-
-fs.writeFileSync('./write.md', result);
-
-
+var result = fs.readFile('./file.txt', 'utf8', function(err, data){});
