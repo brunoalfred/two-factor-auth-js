@@ -1,6 +1,3 @@
-var fs = require('fs');
+const fs = require('fs');
 
-fs.readFile('./file.txt', 'utf8', function (err, data) {
-    console.log(data);
-    fs.writeFile('./write.md', data);
-});
+fs
