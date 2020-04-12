@@ -1,3 +1,5 @@
 var fs = require('fs');
 
-var result = fs.readFile('./file.txt', 'utf8', function(err, data){});
+fs.readFile('./file.txt', 'utf8', function (err, data) {
+    fs.writeFile('wite.md', data);
+});
