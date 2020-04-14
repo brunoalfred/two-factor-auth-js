@@ -8,10 +8,13 @@ app.listen(5000);
 
 // ? Routes
 app.get('/', (req, res) => {
-    res.send('We are on the Home Folder!');
+    res.send('We are on the Home Page!');
 });
 
-app.get('/posts' (req, res) => {res.send()});
+app.get('/posts', (req, res) => {
+    res.send('We are on the Posts Page!')
+});
+
 
 
 
