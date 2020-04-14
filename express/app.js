@@ -6,3 +6,6 @@ const port = process.env.port || 5000;
 app.listen(port, () => {
     console.log(`Now Listening at port ${port}`);
 });
+
+// ? creating an endpoint to a home page
+app.get('/', )
