@@ -14,11 +14,11 @@ app.listen(port, () => {
 app.get('/one', (req, res, next) => {
     console.log('The response will be sent by the next function');
     next();     
-}, (req, res) => {
+}, (req, res, next) => {
     res.send('Hello I\'m the second callBack');
     console.log('The response was sent by the previous function');
     next();
 
 }, (req, res) => {
-    
+    console.log('Last callback');
 });
