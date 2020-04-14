@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.port || 5000;
 
-// ? Listening to a port in a 
+// ? Listening to a port where a server was Sta
 app.listen(port, () => {
     console.log(`Now Listening at port ${port}`);
 });
