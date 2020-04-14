@@ -10,7 +10,10 @@ app.listen(port, () => {
 
 
 // ? MiddleWare functions
-app.use('/user/:id', (req, res, next) => {
-    console.log('Request Type:', req.method);
-    next();
-});
+
+
+
+
+
+
+// ? ROutes
