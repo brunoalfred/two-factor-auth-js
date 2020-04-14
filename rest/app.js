@@ -6,13 +6,13 @@ const app = express();
 app.listen(5000);
 
 
-// ? Routes
+// ? Routes 
 app.get('/', (req, res) => {
     res.send('We are on the Home Page!');
 });
 
 app.get('/posts', (req, res) => {
-    res.send('We are on the Posts Page!')
+    res.send('We are on the Posts Page!');
 });
 
 
