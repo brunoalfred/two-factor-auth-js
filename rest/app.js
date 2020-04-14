@@ -10,7 +10,13 @@ app.listen(port, () => {
 
 
 // ? The MIddleWare
-app.use('/login', (req, res, next) => { });
+app.use('/login', (req, res, next) => { 
+    if (req.query.admin === 'true'){
+        next();
+    } else {
+        res.send('Not  Authourized');
+    }
+});
 
 
 
