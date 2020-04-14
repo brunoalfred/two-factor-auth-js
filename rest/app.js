@@ -6,3 +6,9 @@ const port = 5000;
 app.listen(port, () => {
     console.log(`Listening to server in port ${port}`);
 });
+
+
+// ? Creating a Route
+app.get('example/a', () => {
+    console.log('A single callback function');
+});
