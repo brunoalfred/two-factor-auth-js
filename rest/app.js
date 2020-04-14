@@ -22,3 +22,7 @@ app.get('/login', (req, res, next) => {
     res.send('Login Page');
     next();
 });
+
+app.get('/user', (req, res,) => {
+    res.send('Congratulation');
+});
