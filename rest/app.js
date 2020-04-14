@@ -23,7 +23,11 @@ var cb1 = function(req, res, next) {
 }
 
 var cb2 = function(req, res, next) {
-    console.log('Third CallBack');
+    res.send('I\'m the CallBack 3');
     next();
+}
+
+var cb3 = function(req, res, next) {
+    
 }
 
