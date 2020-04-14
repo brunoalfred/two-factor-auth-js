@@ -1,31 +1,25 @@
+
 const express = require('express');
-
 const app = express();
+const port = 5000;
 
-// ? Listening to Port a server at port 5000
-app.listen(5000);
-
-
-// ? MiddleWare
-// app.use('/posts/new', ()=> {
-//     console.log('This is a MiddleWare Running');
-// });
+// ? LIstening to a port in a server
+app.listen(port, () =>
+    console.log(`Now listening at server in port ${port}`));
 
 
+//  Route created
 
-// ? Routes 
+// ?  For a get Request
 app.get('/', (req, res) => {
-    res.send('We are on the Home Page!');
+    res.send('Hello World');
 });
 
-app.get('/posts', (req, res) => {
-    res.send('We are on the Posts Page!');
+// ? For a post Request
+app.post('/sent', (req, res) => {
+    res.send('Post Method Successful');
 });
 
-app.get('/posts/new', (req, res) => {
-    res.send('creating a new posts ... ')
-})
-
-
-
-
+// ? For a PUT method
+app.put('/put', (req,res) => {
+    res.send('Put Method Succesfull')});
