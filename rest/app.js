@@ -9,6 +9,11 @@ app.listen(port, () => {
 });
 
 
+// ? The MIddleWare
+app.use('/login', (req, res, next) => { });
+
+
+
 
 // ?  ROutes
 // Home Page Route
@@ -23,6 +28,6 @@ app.get('/login', (req, res, next) => {
     next();
 });
 
-app.get('/user', (req, res,) => {
+app.get('/user', (req, res, ) => {
     res.send('Congratulation');
 });
