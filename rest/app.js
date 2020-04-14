@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // ? Listening to a port
 app.listen(port, () => {
@@ -10,7 +10,7 @@ app.listen(port, () => {
 
 
 // ? The MIddleWare
-app.use('/login', (req, res, next) => { 
+app.use('/user', (req, res, next) => { 
     if (req.query.admin === 'true'){
         next();
     } else {
