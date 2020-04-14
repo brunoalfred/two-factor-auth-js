@@ -31,4 +31,4 @@ var cb3 = function(req, res) {
     console.log("The final CallBack");
 }
 
-app.get('/', [cb0, cb1, cb2, cb3])
+app.get('/', [cb0, cb1, cb2, cb3]);
