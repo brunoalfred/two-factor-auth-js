@@ -4,7 +4,8 @@ const port = 5000;
 
 // ? Listening to a port
 app.listen(port, () => {
-    console.log(`Now Listening to port ${port}`)
+    console.log(`Now Listening to port ${port}`);
+    
 });
 
 
