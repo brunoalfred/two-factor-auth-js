@@ -1,0 +1,11 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "learning on restful APIs with nodeJs KILLER APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno",
+  "license": "ISC"
+}
