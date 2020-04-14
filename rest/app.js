@@ -10,15 +10,7 @@ app.listen(port, () => {
 
 // ! Creating a Route
 
-// ? ROute with multiple callbacks
-app.get('/one', (req, res, next) => {
-    console.log('The response will be sent by the next function');
-    next();     
-}, (req, res, next) => {
-    res.send('Hello I\'m the second callBack');
-    console.log('The response was sent by the previous function');
+app.get('/', (req, res, next) => {
+    console.log('Callback 1');
     next();
-
-}, (req, res) => {
-    console.log('Last callback');
-});
+}, (re));
