@@ -27,7 +27,8 @@ var cb2 = function(req, res, next) {
     next();
 }
 
-var cb3 = function(req, res, next) {
-    
+var cb3 = function(req, res) {
+    console.log("The final CallBack");
 }
 
+app.get('/', [cb0, cb1, cb2, cb3])
