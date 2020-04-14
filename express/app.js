@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = process.env.port || 5000;
 
@@ -9,6 +10,6 @@ app.listen(port, () => {
 
 // ? creating an endpoint to a home page
 app.get('/', (req, res) => {
-    // res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    res.send('Yooooo');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    
 });
