@@ -10,3 +10,14 @@ app.listen(port, () => {
 
 // ! Creating a Route
 
+// ? A Three callBacks
+
+var cb0 = function(req, res, next) {
+    console.log('First CallBack');
+    next();
+}
+
+var cb1 = function(req, res, next) {
+    console.log('Second CallBack');
+    next();
+}
