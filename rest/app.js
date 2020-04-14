@@ -9,16 +9,10 @@ app.listen(port, () => {
 });
 
 
-// ? MiddleWare functions
-app.use('/', () => {
-    console.log('THe Middle Ware is running');
-});
 
+// ?  ROutes
+// Home Page Route
 
-
-
-
-// ? ROutes
-app.get('/', (req, res) => {
-    res.send('Home Page')
+app.get('/', (req, res, next) => {
+    res.send('Welcome to Our App');
 });
