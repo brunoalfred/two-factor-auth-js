@@ -10,15 +10,3 @@ app.listen(port, () => {
 
 // ! Creating a Route
 
-app.get('/', (req, res, next) => {
-    console.log('Callback 1');
-    next();
-}, (req, res, next) => {
-    console.log('Callback 2');
-    next();
-}, (req, res, next) => {
-    console.log('Callback 3');
-    next();
-}, (req, res, ) => {
-    res.send('I\'m the final Callback!');
-});
