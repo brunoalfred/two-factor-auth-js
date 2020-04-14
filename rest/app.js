@@ -21,5 +21,11 @@ app.post('/sent', (req, res) => {
 });
 
 // ? For a PUT method
-app.put('/put', (req,res) => {
-    res.send('Put Method Succesfull')});
+app.put('/put', (req, res) => {
+    res.send('Put Method Succesfull');
+});
+
+// ? For a DELETE MEthod
+app.delete('/deletion', (req, res) => {
+    res.send('Deletion Method Successful');
+})
