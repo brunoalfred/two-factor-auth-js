@@ -15,4 +15,10 @@ app.listen(port, () => {
 
 app.get('/', (req, res, next) => {
     res.send('Welcome to Our App');
+    next();
+});
+
+app.get('/login', (req, res, next) => {
+    res.send('Login Page');
+    next();
 });
