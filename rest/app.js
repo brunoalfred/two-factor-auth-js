@@ -21,3 +21,9 @@ var cb1 = function(req, res, next) {
     console.log('Second CallBack');
     next();
 }
+
+var cb2 = function(req, res, next) {
+    console.log('Third CallBack');
+    next();
+}
+
