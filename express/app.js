@@ -8,8 +8,8 @@ app.listen(port, () => console.log(`Now Listening at port ${port}`)
 );
 
 // ? creating an endpoint to a home page
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 // * FOr sample get request
-app.get('/api/member')
+app.get('/api/member', (req, res, next)=> res.json(members));
