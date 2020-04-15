@@ -18,3 +18,5 @@ const members = [{ "id": 1, "email": "pdoorey0@chron.com", "gender": "Male", "ip
 { "id": 18, "email": "bfindenh@slate.com", "gender": "Male", "ip_address": "127.132.215.235", "name": "Boniface Finden" },
 { "id": 19, "email": "stebbsi@google.co.uk", "gender": "Female", "ip_address": "1.56.250.248", "name": "Selena Tebbs" },
 { "id": 20, "email": "hguillotj@1und1.de", "gender": "Male", "ip_address": "131.60.209.166", "name": "Hadrian Guillot" }]
+
+module.exports = members;
