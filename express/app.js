@@ -20,4 +20,4 @@ app.get('/members', (req, res, next) => res.json(members));
 
 
 // * For a given member only, GET request
-app.get('/members', (req, res, next) => res.)
+app.get('/members', (req, res, next) => res.send());
