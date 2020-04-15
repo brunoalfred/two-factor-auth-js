@@ -6,8 +6,10 @@ const members = require('./Members');
 const port = process.env.port || 5000;
 
 // ? Listening to a port where a server was Sta
-app.listen(port, () =>
+ app.listen(port, () =>
     console.log(`Now Listening at port ${port}`));
 
 
-app.get('/user/:id', (req, res) => { });
+app.get('/user/:id', (req, res) => {
+    res.send(id, req.params.id);
+});
