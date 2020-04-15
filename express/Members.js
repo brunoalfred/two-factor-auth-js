@@ -1,4 +1,4 @@
-[{ "id": 1, "email": "pdoorey0@chron.com", "gender": "Male", "ip_address": "141.53.125.179", "name": "Pablo Doorey" },
+const members = [{ "id": 1, "email": "pdoorey0@chron.com", "gender": "Male", "ip_address": "141.53.125.179", "name": "Pablo Doorey" },
 { "id": 2, "email": "nsurcomb1@google.it", "gender": "Female", "ip_address": "188.200.156.99", "name": "Neile Surcomb" },
 { "id": 3, "email": "ccopozio2@youtu.be", "gender": "Female", "ip_address": "111.94.200.253", "name": "Chiarra Copozio" },
 { "id": 4, "email": "bmerton3@wikispaces.com", "gender": "Male", "ip_address": "133.89.142.122", "name": "Brand Merton" },
