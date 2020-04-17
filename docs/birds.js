@@ -6,4 +6,6 @@ router.use(function (req, res) {
     console.log('Time:', Date.now())    ;
     next();
 
-})
+});
+// homepage route
+router.get('/', () => res.send('This is Home Page'));
