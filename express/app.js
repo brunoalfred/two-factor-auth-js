@@ -9,6 +9,10 @@ const app = express();
 app.listen(port, () => console.log(`Listening to port number ${port}`));
 
 // first route
-app.get('/', (req, res) => res.send('Hello I\'m on air'));
+app.get('/', (req, res) => console.log('route 1'));
 
-app.get('/about', (req, res) => res.send('Welcome to the about Page'));
+//second route
+app.get('/about', (req, res) => res.send('Welcome to the about Page...'));
+
+
+app.use('/', (express.static(__dirname + './public/html/index.html')));
