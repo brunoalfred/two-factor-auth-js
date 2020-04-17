@@ -8,11 +8,6 @@ const app = express();
 // Listening to a port
 app.listen(port, () => console.log(`Listening to port number ${port}`));
 
-// first route
-app.get('/', (req, res) => console.log('route 1'));
-
-//second route
-app.get('/about', (req, res) => res.send('Welcome to the about Page...'));
+app.get('/', (req, res) => res.json(Members.jso));
 
 
-app.use('/', (express.static(__dirname + './public/html/index.html')));
