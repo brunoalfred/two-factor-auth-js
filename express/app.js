@@ -9,9 +9,4 @@ const port = process.env.port || 5000;
 app.listen(port, () =>
     console.log(`Now Listening at port ${port}`));
 
-
-app.get('/', (req, res) => res.json({ users: [{"id": 1}] }))
-
-app.get('/user/:id', (req, res) => {
-    res.send(id, req.params.id);
-});
+app.get('/', (req, res) => res.send('Hello World'));
