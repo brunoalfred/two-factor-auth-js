@@ -6,10 +6,11 @@ const port = process.env.port || 5000;
 // ? The server is initiated
 
 const server = http.createServer((req, res) => {
-
-    res.setHeader('Content-Type', 'plain/text');
-    const {method} = req;
+    const { method } = req;
     console.log(method);
+    res.setHeader('Content-Type', 'plain/text');
+    res.write('<h1>Hello Nigga<h1>');
+
     res.end();
 
 });
