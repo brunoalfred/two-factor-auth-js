@@ -3,11 +3,21 @@ const http = require('http');
 const port = process.env.port || 5000;
 
 
+// * Sample Data 
+const todos = [
+    { id: 1, text: 'Todo One' },
+    { id: 2, text: 'Todo Two' },
+    { id: 3, text: 'Todo Three' }]
+
+
+
+
+
 // ? The server is initiated
 
 const server = http.createServer((req, res) => {
     console.log(req);
-    res.end();
+    res.end(JSON.stringify({ data: todos }));
 });
 
 
