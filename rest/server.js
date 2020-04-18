@@ -4,8 +4,12 @@ const port = process.env.port || 5000;
 
 
 // ? The server is initiated
-const server = http.createServer((req, res)
-    => { console.log(req) });
+
+const server = http.createServer((req, res) => {
+    console.log(req.statusCode);
+    res.end();
+
+});
 
 
 
