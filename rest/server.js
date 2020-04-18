@@ -6,8 +6,9 @@ const port = process.env.port || 5000;
 // ? The server is initiated
 
 const server = http.createServer((req, res) => {
-    console.log(req.statusCode);
-    console.log(res.statusCode);
+    
+    const {headers, url, method, statusCode} = req;
+    console.log(headers, url, method, statusCode);
     res.end();
 
 });
