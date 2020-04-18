@@ -9,7 +9,7 @@
 // });
 
 
-// // ? The MIddleWare
+// // ? The MiddleWare
 // app.use('/user', (req, res, next) => { 
 //     if (req.query.admin === 'true'){
 //         next();
@@ -21,8 +21,10 @@
 
 
 
-// // ?  ROutes
-// // Home Page Route
+// //  ?  Routes
+// //  Home Page Route
+
+
 
 // app.get('/', (req, res, next) => {
 //     res.send('Welcome to Our App');
