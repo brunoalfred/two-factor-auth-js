@@ -7,8 +7,8 @@ const port = process.env.port || 5000;
 
 const server = http.createServer((req, res) => {
     
-    const {headers, url, method, statusCode} = req;
-    console.log(headers, url, method, statusCode);
+    const {headers, url, methods} = req;
+    console.log(headers, url, methods);
     res.end();
 
 });
