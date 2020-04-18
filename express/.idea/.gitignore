@@ -1,7 +1,7 @@
 # Default ignored files
 /workspace.xml
-express.iml
-misc.xml
-modules.xml
-vcs.xml
-.gitignore
+/express.iml
+/misc.xml
+/modules.xml
+/vcs.xml
+/.gitignore
