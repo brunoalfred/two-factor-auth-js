@@ -8,6 +8,5 @@ const app = express();
 // Listening to a port
 app.listen(port, () => console.log(`Listening to port number ${port}`));
 
-app.get('/', (req, res) => );
 
 

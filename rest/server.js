@@ -2,12 +2,20 @@
 const http = require('http');
 const port = process.env.port || 5000;
 
+
+// ? The server is initiated
+const server = http.createServer((req, res)
+    => { console.log(req) });
+
+
+
+
+
+
+
 //TODO: Listening port on the server
 server.listen(port, () =>
     console.log(`Server is Listening on port No. ${port}`));
 
 
 
-// ? The server is initiated
-const server = http.createServer((req, res)
-    =>  console.log(req) );
