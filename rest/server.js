@@ -17,7 +17,7 @@ const todos = [
 
 const server = http.createServer((req, res) => {
 
-    console.log(req.headers.authorization)
+    console.log(req.headers.authorization);
     res.writeHead(404,
         'Not Available',
         {
