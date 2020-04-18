@@ -16,8 +16,17 @@ const todos = [
 // ? The server is initiated
 
 const server = http.createServer((req, res) => {
-    console.log(req);
-    res.end(JSON.stringify({ data: todos }));
+
+    console.log(req.headers.authorization)
+    res.writeHead(404,
+        'Not Available',
+        {
+            'Content-Type': 'application/json',
+            'X-Powered-By': 'Node.js'
+        });
+
+
+    res.end(JSON.stringify({ success: false, data: null }))
 });
 
 
