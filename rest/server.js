@@ -7,6 +7,7 @@ const port = process.env.port || 5000;
 
 const server = http.createServer((req, res) => {
     console.log(req.statusCode);
+    console.log(res.statusCode);
     res.end();
 
 });
