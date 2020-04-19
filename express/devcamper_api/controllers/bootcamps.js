@@ -1,4 +1,4 @@
-// @description  Get All Bootcamps
+//  @description  Get All Bootcamps
 //  @route       GET /api/v1/bootcamps
 //  @access      Public
 
@@ -33,6 +33,8 @@ exports.createBootcamp = (req, res, next) => {
 }
 
 
+
+
 //  @description    Update the Bootcamp
 //  @route          PUT   /api/v1/bootcamps/:id
 //  @access         Private
@@ -44,12 +46,16 @@ exports.updateBootcamp = (req, res, next) => {
 }
 
 
+
 //  @description    Delete a Bootcamp
 //  @route          DELETE   /api/v1/bootcamp/:id
 //  @access         Private
+
 
 exports.deleteBootcamp = (req, res, next) => {
     res
         .status(200)
         .json({ succes: true, msg: `Delete bootcamp with id ${req.params.id}` });
 }
+
+
