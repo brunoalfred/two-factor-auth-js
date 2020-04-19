@@ -13,3 +13,6 @@ const port = process.env.PORT || 5000;
 app.listen(port, () =>
     console.log(`server running on ${process.env.NODE_ENV} mode on port no. ${port}`));
 
+app.get('/', (req, res)=> {
+    res.send('<h1>Hello from express</h1>');
+})
