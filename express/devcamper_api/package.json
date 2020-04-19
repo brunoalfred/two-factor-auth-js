@@ -4,7 +4,7 @@
   "description": "Learning the express and MongoDb",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=production node server",
+    "start": "NODE_ENV=production node server",
     "dev": "nodemon server"
   },
   "repository": {
