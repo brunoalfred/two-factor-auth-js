@@ -29,3 +29,5 @@ const logger = (req, res, next) => {
     console.log('Middleware Up And Running');
     next();
 }
+
+app.use(logger);
