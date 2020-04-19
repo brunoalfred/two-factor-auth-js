@@ -5,9 +5,11 @@ const dotenv = require('dotenv');
 const app = express();
 
 // LOad the config file
-dotenv.config({path: './config/config.env'});
+dotenv.config({ path: './config/config.env' });
 
 const port = process.env.PORT || 5000;
 
-app.listen(port,  () => console.log())
+// LIstening to port number 5000 by the server
+app.listen(port, () =>
+    console.log(`server running on port no. ${port}`));
 
