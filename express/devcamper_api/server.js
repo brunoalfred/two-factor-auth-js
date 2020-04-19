@@ -21,6 +21,6 @@ app.post('/api/v1/bootcamps', (req, res) => {
     res.status(200).json({ success: true, msg: 'Create a new Bootcamps ' })
 });
 
-app.put('/api/v1/bootcamps', (req, res) => {
-    res.status(200).json({ success: true, msg: 'Update bootcamps' });
+app.put('/api/v1/bootcamps/:id', (req, res) => {
+    res.status(200).json({ success: true, msg:`Update bootcamp ${req.params.id}` });
 });
