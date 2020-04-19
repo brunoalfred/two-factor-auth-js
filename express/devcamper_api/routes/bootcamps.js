@@ -105,4 +105,4 @@ const {
 //         .json({ success: true, msg: `Delete a bootcamp with id: ${req.params.id}` })
 // });
 
-// module.exports = router;
+module.exports = router;
