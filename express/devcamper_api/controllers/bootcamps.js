@@ -34,7 +34,7 @@ exports.createBootcamp = () => {
 
 
 //  @description    Update the Bootcamp
-//  @route          PUT   /api/v1/bootcamps
+//  @route          PUT   /api/v1/bootcamps/:id
 //  @access         Private
 
 exports.updateBootcamp = (req, res, next) => {
@@ -45,7 +45,7 @@ exports.updateBootcamp = (req, res, next) => {
 
 
 //  @description    Delete a Bootcamp
-//  @route          DELETE   /api/v1/bootcamp
+//  @route          DELETE   /api/v1/bootcamp/:id
 //  @access         Private
 
 exports.deleteBootcamp = (req, res, next) => {
