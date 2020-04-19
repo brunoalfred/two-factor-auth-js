@@ -18,4 +18,16 @@ exports.getBootcamp = (req, res, next) => {
     res
         .status(200)
         .json({ success: true, msg: `Get  bootcamp ${req.params.id}` });
-} 
+}
+
+
+
+// @description    Creating a new Bootcamp
+//  @route         POST /api/v1/bootcamps
+//  @access        Private
+
+exports.createBootcamp = () => {
+    res
+        .status(200)
+        .json({ success: true, msg: 'Create a new Bootcamps ' });
+}
