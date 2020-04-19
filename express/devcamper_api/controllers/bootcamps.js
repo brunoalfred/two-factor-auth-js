@@ -1,4 +1,6 @@
-
+// @description  Get All Bootcamps
+//  @route       GET /api/v1/bootcamps
+//  @access      Public
 
 exports.getBootcamps = (req, res, next) => {
     res
