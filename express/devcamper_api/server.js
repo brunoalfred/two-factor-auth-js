@@ -2,6 +2,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
+//  * Include the middllwares in this module
+const logger = require('./middlewares/logger');
 
 // * Include The route files
 const bootcamps = require('./routes/bootcamps');
