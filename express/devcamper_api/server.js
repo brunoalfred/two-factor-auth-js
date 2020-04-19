@@ -24,4 +24,8 @@ app.use('/api/v1/bootcamps', bootcamps);
 
 
 //! Middleware CONCEPTS
-const logger 
+const logger = (req, res, next) => {
+    req.hello = 'Hello Bruno';
+    console.log('Middleware Up And Running');
+    next();
+}
