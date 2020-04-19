@@ -1,6 +1,7 @@
 // * including the needed modules in the server module
 const express = require('express');
 const dotenv = require('dotenv');
+const mor
 
 //  * Include the middllwares in this module
 const logger = require('./middlewares/logger');
