@@ -31,3 +31,14 @@ exports.createBootcamp = () => {
         .status(200)
         .json({ success: true, msg: 'Create a new Bootcamps ' });
 }
+
+
+//  @description    Update the Bootcamp
+//  @route          PUT   /api/v1/bootcamps
+//  @access         Private
+
+exports.updateBootcamp = (req, res, next) =>{
+    res
+    .status(200)
+    .json({ success: true, msg: `Update bootcamp ${req.params.id}` });
+}
