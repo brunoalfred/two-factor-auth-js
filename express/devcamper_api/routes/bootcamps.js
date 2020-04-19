@@ -20,13 +20,13 @@ router
 
 //  For methods that require id
 router
-    .route('/id')
+    .route('/:id')
     .get(getBootcamp)
     .put(createBootcamp)
     .delete(deleteBootcamp);
 
 
-    
+
 
 
 
