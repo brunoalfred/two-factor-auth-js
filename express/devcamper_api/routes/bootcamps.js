@@ -10,8 +10,23 @@ const {
 } = require('../controllers/bootcamps');
 
 
+// For the methods with no id required
+router
+    .route('/')
+    .get(getBootcamps)
+    .post(createBootcamp);
 
 
+
+//  For methods that require id
+router
+    .route('/id')
+    .get(getBootcamp)
+    .put(createBootcamp)
+    .delete(deleteBootcamp);
+
+
+    
 
 
 
