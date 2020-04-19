@@ -1,7 +1,7 @@
 // * including the needed modules in the server module
 const express = require('express');
 const dotenv = require('dotenv');
-const mor
+const morgan = require('morgan');
 
 //  * Include the middllwares in this module
 const logger = require('./middlewares/logger');
@@ -29,5 +29,8 @@ app.listen(port, () =>
 app.use('/api/v1/bootcamps', bootcamps);
 
 
-app.use(logger);
+// * Development LOGGER Middleware
+if(process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'));
+}
 
