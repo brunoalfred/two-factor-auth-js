@@ -51,7 +51,6 @@ exports.updateBootcamp = (req, res, next) => {
 //  @route          DELETE   /api/v1/bootcamp/:id
 //  @access         Private
 
-
 exports.deleteBootcamp = (req, res, next) => {
     res
         .status(200)
