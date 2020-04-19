@@ -2,10 +2,11 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
-const app = express();
 
 // * Include The route files
 const bootcamps = require('./routes/bootcamps');
+
+const app = express();
 
 
 // LOad the config file
