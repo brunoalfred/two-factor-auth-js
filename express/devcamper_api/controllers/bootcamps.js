@@ -42,3 +42,10 @@ exports.updateBootcamp = (req, res, next) =>{
     .status(200)
     .json({ success: true, msg: `Update bootcamp ${req.params.id}` });
 }
+
+
+//  @description    Delete a Bootcamp
+//  @route          DELETE   /api/v1/bootcamp
+//  @access         Private
+
+exports.deleteBootcamp 
