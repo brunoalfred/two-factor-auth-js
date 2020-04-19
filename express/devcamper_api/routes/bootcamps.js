@@ -14,7 +14,7 @@ const {
 router
     .route('/')
     .get(getBootcamps)
-    .post(createBootcamp);
+    .post(updateBootcamp);
 
 
 
