@@ -11,5 +11,11 @@
     "url": "brunoalfred"
   },
   "author": "Bruno Alfred",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
