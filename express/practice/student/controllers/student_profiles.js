@@ -27,6 +27,7 @@ exports.getStudentProfile = (req, res, next) => {
 // @ Route         /api/v1/student_profile
 // @ access        Private
 exports.createStudentProfile = (req, res, next) => {
-    res.st
+    res.status(200).json({success: true, msg: 'Create a Single Student'});
 }
 
+// @ description    Update the Student's Profile
