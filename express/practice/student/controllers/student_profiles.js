@@ -17,7 +17,7 @@ exports.getStudentProfiles = (req, res, next) => {
 exports.getStudentProfile = (req, res, next) => {
     res
         .status(200)
-        .json({success: true, msg: 'Show a Single Student'});
+        .json({success: true, msg: `Show a Single Student with id ${req.params.id}`});
 
 
 }

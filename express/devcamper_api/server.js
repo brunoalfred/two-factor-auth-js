@@ -29,7 +29,10 @@ app.listen(port, () =>
 app.use('/api/v1/bootcamps', bootcamps);
 
 
+
 // * Development LOGGER Middleware
+// It Morgan is used to output request details on the console. 
+// Therefore, Morgan output's anything that happens on the webpage.
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
