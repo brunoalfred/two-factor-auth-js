@@ -50,5 +50,5 @@ exports.updateStudentProfile = (req, res, next) => {
 exports.deleteStudentProfile = (req, res, next) => {
     res
         .status(200)
-        .json({success: true, msg: `Deleted Student with id ${req.params.id}`})
+        .json({success: true, msg: `Deleted Student with id ${req.params.id}`});
 }
