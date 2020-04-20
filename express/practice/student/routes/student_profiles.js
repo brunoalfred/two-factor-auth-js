@@ -16,15 +16,16 @@ const {
 router
     .route('/')
     .get(getStudentProfiles)
-    .get(getStudentProfile);
+    .post(createStudentProfile)
+
 
 
 
 //Routes with METHODS that do involve :id parameter
 router
     .route('/:id')
-    .post(createStudentProfile)
     .put(updateStudentProfile)
+    .get(getStudentProfile)
     .delete(deleteStudentProfile);
 
 
