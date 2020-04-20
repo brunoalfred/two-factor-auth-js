@@ -30,10 +30,10 @@ router.put('/:id', (req, res) => {
         .json({success: true, msg: `Update a Student with id ${req.params.id}` });
 });
 
-router.delete('/', (req, res) => {
+router.delete('/:id', (req, res) => {
     res
         .status(200)
-        .json({sucess: true, msg: `Delete a Student with id ${req.params.id}`});
+        .json({success: true, msg: `Delete a Student with id ${req.params.id}`});
 })
 
 
