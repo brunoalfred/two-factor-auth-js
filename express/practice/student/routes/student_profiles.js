@@ -15,7 +15,15 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-
+    res.status(200).json({success: true, msg: 'Create a Student'});
 });
+
+router.put('/', (req, res) => {
+    res.status(200).json({success: true, msg: 'Update a Student'});
+});
+
+router.delete('/', (req, res) => {
+    res.status(200).json({sucess: true, msg: 'Delete a Student'});
+})
 module.exports = router;
 

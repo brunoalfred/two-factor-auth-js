@@ -15,8 +15,11 @@ app.listen(port, () => {
 });
 
 
+//Include the Route files
+const student_profiles = require('./routes/student_profiles');
 
 
+//
 
 
 
