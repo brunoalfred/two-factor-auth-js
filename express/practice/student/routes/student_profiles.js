@@ -14,7 +14,7 @@ router.get('/:id', (req, res) => {
 
     res
         .status(200)
-        .json({success: true, msg: 'Show a Single Student'});
+        .json({success: true, msg: `Show a Single Student with id ${req.params.id}`});
 
 });
 
@@ -24,16 +24,19 @@ router.post('/', (req, res) => {
         .json({success: true, msg: 'Create a Student'});
 });
 
-router.put('/', (req, res) => {
+router.put('/:id', (req, res) => {
     res
         .status(200)
-        .json({success: true, msg: 'Update a Student'});
+        .json({success: true, msg: `Update a Student with id ${req.params.id}` });
 });
 
 router.delete('/', (req, res) => {
     res
         .status(200)
-        .json({sucess: true, msg: 'Delete a Student'});
+        .json({sucess: true, msg: `Delete a Student with id ${req.params.id}`});
 })
+
+
+
 module.exports = router;
 
