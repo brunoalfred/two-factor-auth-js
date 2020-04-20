@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 
-// Importing the contoller methods for all routes
-const { }
+// Importing the controller methods for all routes
+const {} = require('../controllers/student_profiles');
 
 
 
