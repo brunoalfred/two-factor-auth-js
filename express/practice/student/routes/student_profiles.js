@@ -13,6 +13,10 @@ const {
 
 
 //Routes with METHODS that dont involve :id parameter
+router
+    .route('/')
+    .get(getStudentProfiles)
+    .get(getStudentProfile);
 
 
 
