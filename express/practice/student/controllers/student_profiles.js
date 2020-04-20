@@ -24,10 +24,31 @@ exports.getStudentProfile = (req, res, next) => {
 
 
 // @ description   Create a Student Profile
-// @ Route         /api/v1/student_profile
+// @ Route         /api/v1/student_profiles
 // @ access        Private
 exports.createStudentProfile = (req, res, next) => {
-    res.status(200).json({success: true, msg: 'Create a Single Student'});
+    res
+        .status(200)
+        .json({success: true, msg: 'Create a Single Student'});
 }
 
 // @ description    Update the Student's Profile
+// @ Route          /api/v1/student_profiles/:id
+// @ access         Private
+
+exports.updateStudentProfile = (req, res, next) => {
+    res
+        .status(200)
+        .json({success: true, msg: 'Update a Single Student'});
+}
+
+
+// @ description    Delete the Student's Profile
+// @ Route          /api/v1/student_profile/:id
+// @ access         Private
+
+exports.deleteStudentProfile = (req, res, next) => {
+    res
+        .status(200)
+        .json({success: true,})
+}
