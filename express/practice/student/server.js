@@ -19,7 +19,8 @@ app.listen(port, () => {
 const student_profiles = require('./routes/student_profiles');
 
 
-//
+//Mount the Routes
+app.use('/api/v1/student_profiles', student_profiles);
 
 
 
