@@ -3,7 +3,16 @@ const router = express.Router();
 
 
 // Importing the controller methods for all routes
-const {} = require('../controllers/student_profiles');
+const {
+    getStudentProfile,
+    getStudentProfiles,
+    createStudentProfile,
+    updateStudentProfile,
+    deleteStudentProfile,
+} = require('../controllers/student_profiles');
+
+
+//Routes with METHODS that dont involve :id parameter
 
 
 
@@ -27,40 +36,54 @@ const {} = require('../controllers/student_profiles');
 
 
 
-router.get('/', (req, res) =>{
-
-    res
-        .status(200)
-        .json({success: true, msg: 'Show all Students'});
 
 
-} );
 
-router.get('/:id', (req, res) => {
 
-    res
-        .status(200)
-        .json({success: true, msg: `Show a Single Student with id ${req.params.id}`});
 
-});
 
-router.post('/', (req, res) => {
-    res
-        .status(200)
-        .json({success: true, msg: 'Create a Student'});
-});
 
-router.put('/:id', (req, res) => {
-    res
-        .status(200)
-        .json({success: true, msg: `Update a Student with id ${req.params.id}` });
-});
 
-router.delete('/:id', (req, res) => {
-    res
-        .status(200)
-        .json({success: true, msg: `Delete a Student with id ${req.params.id}`});
-})
+
+
+
+
+//
+//
+// router.get('/', (req, res) =>{
+//
+//     res
+//         .status(200)
+//         .json({success: true, msg: 'Show all Students'});
+//
+//
+// } );
+//
+// router.get('/:id', (req, res) => {
+//
+//     res
+//         .status(200)
+//         .json({success: true, msg: `Show a Single Student with id ${req.params.id}`});
+//
+// });
+//
+// router.post('/', (req, res) => {
+//     res
+//         .status(200)
+//         .json({success: true, msg: 'Create a Student'});
+// });
+//
+// router.put('/:id', (req, res) => {
+//     res
+//         .status(200)
+//         .json({success: true, msg: `Update a Student with id ${req.params.id}` });
+// });
+//
+// router.delete('/:id', (req, res) => {
+//     res
+//         .status(200)
+//         .json({success: true, msg: `Delete a Student with id ${req.params.id}`});
+// })
 
 
 
