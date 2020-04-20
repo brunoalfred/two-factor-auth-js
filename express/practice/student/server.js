@@ -7,7 +7,7 @@ const port =  process.env.PORT || 5000;
 
 
 //importing the configuration file
-dotenv.config()
+dotenv.config({path: './config/config..env'});
 
 
 
