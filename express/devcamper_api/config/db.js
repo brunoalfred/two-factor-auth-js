@@ -10,3 +10,5 @@ const connectDB = () => {
     console.log(`MongoDB Connected: ${conn.connection.host}`);
 
 }
+
+module.exports = connectDB;
