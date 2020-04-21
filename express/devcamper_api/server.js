@@ -50,6 +50,6 @@ if(process.env.NODE_ENV === 'development') {
 
 //! Handle Unhandle Promise rejection
 process.on('unhandledRejection', (err, promise) => {
-    console.log(``)
+    console.log(`Error: ${err.message}`);
 });
 
