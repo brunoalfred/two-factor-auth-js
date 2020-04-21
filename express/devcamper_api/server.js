@@ -3,6 +3,15 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 
+// LOad the config file
+dotenv.config({ path: './config/config.env' });
+
+
+
+
+
+
+
 //  * Include the middllwares in this module
 const logger = require('./middlewares/logger');
 
@@ -14,8 +23,6 @@ const bootcamps = require('./routes/bootcamps');
 const app = express();
 
 
-// LOad the config file
-dotenv.config({ path: './config/config.env' });
 
 const port = process.env.PORT || 5000;
 
