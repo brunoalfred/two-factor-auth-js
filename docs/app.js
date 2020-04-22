@@ -1,3 +1,1 @@
-setTimeout(() => { 
-    console.log('hello world after 4 seconds');
-}, 4* 1000);
+const theCode = () => {console.log(`Hello World ${} seconds`);}
