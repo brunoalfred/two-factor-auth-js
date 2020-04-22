@@ -6,4 +6,4 @@ mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
 // the Above process of connecting to database
 
 var db = mongoose.connection;
-db.on('error',)
+db.on('error', console.er)

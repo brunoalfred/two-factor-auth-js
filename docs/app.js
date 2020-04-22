@@ -1,7 +1,3 @@
-const express = require('express');
-const app = express();
-const port = process.env.port || 5000;
-
-//import custome modules
-const birds = require('./birds');
-app.use('/birds', birds);
+setTimeout(() => { 
+    console.log('hello world after 4 seconds');
+});
