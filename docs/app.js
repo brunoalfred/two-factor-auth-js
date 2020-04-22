@@ -1,3 +1,5 @@
-const theCode = (delay) => {console.log(`Hello World ${delay}  seconds`);}
+const theCode = (delay) => {
+    console.log(`Hello World ${delay}  seconds`);
+}
 
-setTimeout(theCode, 3*1000,); 
+setTimeout(theCode, 3 * 1000, 4); 
