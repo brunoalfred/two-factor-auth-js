@@ -4,7 +4,8 @@
   "description": "Learning from docs about nodejs",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "lint": "eslint",
+    "test": "nodemon server.js"
   },
   "repository": {
     "type": "git",
