@@ -12,6 +12,11 @@ function person_repo() {
 
         return new Promise((resolve, reject) => {
             const client = new MongoClient(uri);
+             try {
+
+             } catch(error){
+                 reject(error);
+             }
         });
 
     }
