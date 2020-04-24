@@ -8,7 +8,9 @@ async function main() {
     const client = new MongoClient(uri);
     await client.connect();
 
+    // * connect to the database
     const admin = client.db(db_name).admin();
+    
     console.log(await admin.serverStatus());
     console.log(await admin.listDatabases());
 
