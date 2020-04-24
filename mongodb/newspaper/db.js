@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 
 const person_repo = require('./repositories/person_repo');
+const data = require('./person.json');
 
 
 
