@@ -1,8 +1,22 @@
 const MongoClient = require('mongodb').MongoClient;
 
+const person_repo = require('./repositories/person_repo');
+
+
+
+
 // declare the uri and database names
 const uri = 'mongodb://localhost:27017';
 const db_name = 'circulation';
+
+
+
+
+
+
+
+
+
 
 async function main() {
     const client = new MongoClient(uri);
