@@ -1,5 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 
+
+// importing the useful files
 const person_repo = require('./repositories/person_repo');
 const data = require('./person.json');
 
@@ -22,6 +24,10 @@ const db_name = 'circulation';
 async function main() {
     const client = new MongoClient(uri);
     await client.connect();
+
+
+
+    const results = await person_repo.loadData(data);
 
     // * connect to the database
     const admin = client.db(db_name).admin();
