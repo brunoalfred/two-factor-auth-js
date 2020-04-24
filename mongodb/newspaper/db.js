@@ -10,9 +10,9 @@ async function main() {
 
     // * connect to the database
     const admin = client.db(db_name).admin();
-    
+
     console.log(await admin.serverStatus());
-    console.log(await admin.listDatabases());
+    // console.log(await admin.listDatabases());
 
 
 }
