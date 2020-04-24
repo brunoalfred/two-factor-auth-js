@@ -14,6 +14,11 @@ function person_repo() {
             const client = new MongoClient(uri);
              try {
 
+                await client.connect();
+                const db = client.db(db_name);
+
+
+
              } catch(error){
                  reject(error);
              }
