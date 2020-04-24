@@ -8,7 +8,10 @@ async function main() {
     const client = new MongoClient(uri);
     await client.connect();
 
-    
+    const admin = client.db(db_name).admin();
+    console.log(await admin.serverStatus());
+
+
 }
 
 main();
