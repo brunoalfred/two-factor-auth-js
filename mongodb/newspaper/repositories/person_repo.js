@@ -17,6 +17,8 @@ function person_repo() {
                 await client.connect();
                 const db = client.db(db_name);
 
+                results = await db.collection('person').insertMany(data);
+                resolve(results);
 
 
              } catch(error){
