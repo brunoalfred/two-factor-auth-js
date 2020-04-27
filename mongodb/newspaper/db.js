@@ -28,8 +28,8 @@ async function main() {
 
 
     const results = await person_repo.loadData(data);
-    console.log(results.insertedCount);
-    
+    console.log(results.insertedCount, results.ops);
+
 
     // * connect to the database
     const admin = client.db(db_name).admin();

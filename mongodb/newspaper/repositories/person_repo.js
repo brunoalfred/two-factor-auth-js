@@ -1,4 +1,4 @@
-const { Mo } = require('mongodb');
+const { MongoClient } = require('mongodb');
 
 function person_repo() {
 
@@ -10,7 +10,7 @@ function person_repo() {
     function loadData(data) {
 
 
-        return new Promise((resolve, reject) => {
+        return new Promise(async(resolve, reject) => {
             const client = new MongoClient(uri);
              try {
 
