@@ -17,7 +17,7 @@ router
     .route('/')
     .get(getStudentProfiles)
     .post(createStudentProfile)
-
+.all()
 
 
 
