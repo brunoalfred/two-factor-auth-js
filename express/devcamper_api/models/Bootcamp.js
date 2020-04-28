@@ -69,6 +69,12 @@ const BootcampSchema = new mongoose.Schema({
             'Business',
             'Other'
         ]
-     }
+     },
+     averageRating: {
+         type: Number,
+         min: [1, 'Rating must be at least 1'],
+         max: [10, 'Rating cannot be more than 10'],
+     },
+     
 
 });
