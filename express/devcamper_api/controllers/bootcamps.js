@@ -1,4 +1,5 @@
 // * Importing the Bootcamp model in the controller class
+const Bootcamp = require('../models/Bootcamp');
 
 
 
