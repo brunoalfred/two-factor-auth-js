@@ -13,12 +13,8 @@ connectDB();
 
 
 
-
-
-
 //  * Include the middllwares in this module
 const logger = require('./middlewares/logger');
-
 
 
 // * Include The route files
@@ -47,6 +43,10 @@ app.use('/api/v1/bootcamps', bootcamps);
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
+
+
+
+
 
 //! Handle Unhandle Promise rejection
 process.on('unhandledRejection', (err, promise) => {
