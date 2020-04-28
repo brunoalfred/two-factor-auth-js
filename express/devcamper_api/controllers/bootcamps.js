@@ -1,3 +1,8 @@
+// * Importing the Bootcamp model in the controller class
+
+
+
+
 //  @description  Get All Bootcamps
 //  @route       GET /api/v1/bootcamps
 //  @access      Public
