@@ -97,8 +97,10 @@ const BootcampSchema = new mongoose.Schema({
          default: false
      },
      createdAt: {
-         
-     }
+         type: Date,
+         default: Date.now
+     },
+     
      
 
 });
