@@ -94,6 +94,9 @@ const BootcampSchema = new mongoose.Schema({
      },
      acceptGi: {
          type: Boolean,
+         default: false
+     },
+     createdAt: {
          
      }
      
