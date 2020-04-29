@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const BootcampSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [false, 'Please add a name'],
+        required: [true, 'Please add a name'],
         unique: true,
         trim: true,
         maxlength: [50, 'Name cannot be more than 50 characters']
@@ -17,8 +17,8 @@ const BootcampSchema = new mongoose.Schema({
     website: {
         type: String,
         match: [
-            /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
-        'Please use a valid URL with HTTP or HTTPS'
+            'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)',
+            'Please use a valid URL with HTTP or HTTPS'
         ]
     },
     phone: {
@@ -28,14 +28,14 @@ const BootcampSchema = new mongoose.Schema({
      email: {
          type: String,
          match: [
-             /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
              'Please add a valid email'
 
          ]
      },
      address: {
          type: String,
-         required: [false, 'Please add an address']          
+         required: [true, 'Please add an address']          
      },
      location: {
         //  GeoJson  
@@ -46,7 +46,7 @@ const BootcampSchema = new mongoose.Schema({
         },
         coordinates: {
             type: [Number],
-            required: false,
+            required: true,
             index: '2dsphere'
         },
         formattedAddress: String,
