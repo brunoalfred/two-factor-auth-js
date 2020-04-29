@@ -14,7 +14,7 @@ const {
 router
     .route('/')
     .get(getBootcamps)
-    .post(updateBootcamp);
+    .post(createBootcamp);
 
 
 
@@ -22,7 +22,7 @@ router
 router
     .route('/:id')
     .get(getBootcamp)
-    .put(createBootcamp)
+    .put(updateBootcamp)
     .delete(deleteBootcamp);
 
 
