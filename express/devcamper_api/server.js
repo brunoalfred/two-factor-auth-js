@@ -24,7 +24,7 @@ const app = express();
 
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5500;
 
 
 // LIstening to port number 5000 by the server
