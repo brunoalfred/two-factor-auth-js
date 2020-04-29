@@ -22,6 +22,10 @@ const bootcamps = require('./routes/bootcamps');
 
 const app = express();
 
+//* Defining an important middleware for express to handle
+// * Parsing the body
+app.use(express.json());
+
 
 
 const port = process.env.PORT || 5500;
