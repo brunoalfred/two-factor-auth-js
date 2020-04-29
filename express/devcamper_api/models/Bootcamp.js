@@ -11,7 +11,7 @@ const BootcampSchema = new mongoose.Schema({
     slug: String,
     description: {
         type: String,
-        required: [false, 'Please add a name'],
+        required: [true, 'Please add a description'],
         maxlength: [500, 'Description cannot be more than 500 characters']
     },
     website: {
@@ -42,7 +42,7 @@ const BootcampSchema = new mongoose.Schema({
         type: {
             type: String,
             enum: ['Point'],
-            required: false
+            required: true
         },
         coordinates: {
             type: [Number],
