@@ -32,11 +32,14 @@ exports.getBootcamp = (req, res, next) => {
 //  @route         POST /api/v1/bootcamps
 //  @access        Private
 
-exports.createBootcamp = (req, res, next) => {
-    console.log(req.body)
-    res
-        .status(200)
-        .json({ success: true, msg: 'Create a new Bootcamps ' });
+exports.createBootcamp = async (req, res, next) => {
+
+    // ? creating a new value into the collection
+    const bootcamp = await Bootcamp.create(req.body);
+
+    res.status(201)
+    .json({succes: true, data: {bootcamp}});
+
 }
 
 
