@@ -28,7 +28,7 @@ app.use(express.json());
 
 
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 4000;
 
 
 // LIstening to port number 5000 by the server

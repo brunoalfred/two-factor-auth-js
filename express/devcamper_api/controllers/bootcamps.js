@@ -40,7 +40,7 @@ exports.createBootcamp = async (req, res, next) => {
         const bootcamp = await Bootcamp.create(req.body);
        
         res.status(201)
-            .json({ succes: true, data: bootcamp });
+            .json({ success: true, data: bootcamp });
     } catch (error) {
         res.status(400)
             .json({ success: false });
