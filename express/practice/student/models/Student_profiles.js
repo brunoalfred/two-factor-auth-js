@@ -16,7 +16,7 @@ const Student_profilesSchema = new mongoose.Schema({
     },
     birthDate: {
         type: Date,
-        required: true,
+        required: false,
         default: Date.now()
 
     }

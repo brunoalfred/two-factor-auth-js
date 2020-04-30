@@ -6,6 +6,10 @@ const connectDB = require('./config/db');
 const port = process.env.PORT || 5500;
 
 
+//connecting to database
+connectDB();
+
+
 const app = express();
 //Body parsing middleware built-in in express
 app.use(express.json());
