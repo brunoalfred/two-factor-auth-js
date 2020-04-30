@@ -4,7 +4,8 @@ const dotenv = require('dotenv');
 const app = express();
 const port =  process.env.PORT || 5500;
 
-
+//Body parsing middleware built-in in express
+app.use(express.json());
 
 //importing the configuration file
 dotenv.config({path: './config/config.env'});
