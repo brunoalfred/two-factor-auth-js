@@ -7,6 +7,12 @@ const Student_profilesSchema = new mongoose.Schema({
         trim: true,
         maxlength: [50, 'Name cannot be more than 50 characters']
 
-    }
+    },
+    level: {
+        type: [String],
+        required: true,
+        enum: ['O-level', 'A-level']
 
+    },
+    birthDate: {}
 });
