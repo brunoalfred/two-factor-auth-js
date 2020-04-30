@@ -1,3 +1,6 @@
+//import the model class for student_profile
+const Student_profiles = require('../models/Student_profiles');
+
 
 // @ description     Get all Student  Profile
 // @ Route           /api/vi/student_profiles
@@ -27,10 +30,12 @@ exports.getStudentProfile = (req, res, next) => {
 // @ description   Create a Student Profile
 // @ Route         /api/v1/student_profiles
 // @ access        Private
-exports.createStudentProfile = (req, res, next) => {
-    res
-        .status(200)
-        .json({success: true, msg: 'Create a Single Student'});
+exports.createStudentProfile = async (req, res, next) => {
+    try {
+        const student_profile = await
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 // @ description    Update the Student's Profile
