@@ -52,10 +52,10 @@ if(process.env.NODE_ENV === 'development') {
 
 
 
-// //! Handle Unhandle Promise rejection
-// process.on('unhandledRejection', (err, promise) => {
-//     console.log(`Error: ${err.message}`);
-//     // ! close the server && exit the process
-//     server.close(()=> promise.exit(1));
-// });
+//! Handle Unhandle Promise rejection
+process.on('unhandledRejection', (err, promise) => {
+    console.log(`Error: ${err.message}`);
+    // ! close the server && exit the process
+    server.close(()=> promise.exit(1));
+});
 
