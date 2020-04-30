@@ -14,5 +14,10 @@ const Student_profilesSchema = new mongoose.Schema({
         enum: ['O-level', 'A-level']
 
     },
-    birthDate: {}
+    birthDate: {
+        type: Date,
+        required: true,
+        default: Date.now()
+
+    }
 });
