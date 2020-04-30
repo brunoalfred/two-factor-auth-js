@@ -1,9 +1,12 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const connectDB = require('./config/db');
+
+//useful variables declaration
+const port = process.env.PORT || 5500;
+
 
 const app = express();
-const port =  process.env.PORT || 5500;
-
 //Body parsing middleware built-in in express
 app.use(express.json());
 
