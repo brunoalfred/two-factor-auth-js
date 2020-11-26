@@ -10,7 +10,18 @@ var db = new JsonDB(new Config("myDataBase", true, false, '/'));
 
 var router = express.Router();
 
-/* GET home page. */
+
+/* GET register page. */
+router.get('/', function(req, res, next) {
+  res.render('register', { title: 'Express' });
+ 
+});
+
+
+
+
+
+/* POST register page. */
 router.post("/", function (req, res, next) {
   const id = uuid.v4();
   try {
@@ -23,7 +34,6 @@ router.post("/", function (req, res, next) {
     res.status(500).json({ message: "Error generating secret key" });
   }
 
-  // res.render('register', { title: 'Express' });
 });
 
 module.exports = router;
