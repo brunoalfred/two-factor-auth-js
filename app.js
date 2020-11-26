@@ -9,7 +9,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const loginRouter = require('./routes/login');
+const verifyRouter = require('./routes/verify');
 const registerRouter = require('./routes/register');
 
 
@@ -25,12 +25,6 @@ app.set('view engine', 'ejs');
 // app.set('view engine', 'jade');
 
 
-// app.use('/stylesheets', express.static(path.join(_dirname, 'node_modules/bootstrap/dist/css')))
-// app.use('/javascripts', express.static(path.join(_dirname, 'node_modules/bootstrap/dist/js')))
-// app.use('/javascripts', express.static(path.join(_dirname, 'node_modules/jquery/dist')))
-
-
-
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -40,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/login', loginRouter);
+app.use('/verify', verifyRouter);
 app.use('/register', registerRouter);
 
 
