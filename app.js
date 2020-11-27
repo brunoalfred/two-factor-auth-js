@@ -11,6 +11,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const verifyRouter = require('./routes/verify');
 const registerRouter = require('./routes/register');
+const loginRouter = require('./routes/login');
 
 
 
@@ -36,6 +37,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/verify', verifyRouter);
 app.use('/register', registerRouter);
+app.use('/login', loginRouter);
 
 
 
