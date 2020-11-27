@@ -10,8 +10,13 @@ var router = express.Router();
 var db = new JsonDB(new Config("myDataBase", true, false, '/'));
 
 
+/* GET verify page. */
+router.get('/', function(req, res, next) {
+  res.render('verify', { title: 'Express' });
+ 
+});
 
-/* GET home page. */
+/* POST verify page. */
 router.post("/", function (req, res, next) {
   const { userId, token } = req.body;
   try {
@@ -38,7 +43,10 @@ router.post("/", function (req, res, next) {
     res.status(500).json({ message: "Error retrieving user" });
   }
 
-  // res.render('login', { title: 'Express' });
 });
+
+
+
+
 
 module.exports = router;

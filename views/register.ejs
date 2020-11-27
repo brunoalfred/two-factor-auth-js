@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <link rel="icon" href="/images/favicon.ico" />
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Sign Up</title>
 
     <link
       rel="canonical"
@@ -18,7 +18,7 @@
     />
 
     <!-- Bootstrap core CSS -->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="" /> -->
 
     <!-- Custom styles for this template -->
     <link href="/stylesheets/style.css" rel="stylesheet" />
@@ -41,12 +41,7 @@
   </head>
 
   <body class="text-center">
-
-
-
-
-
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="/register">
       <img
         class="mb-4"
         src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -54,7 +49,18 @@
         width="72"
         height="72"
       />
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input
+        type="text"
+        id="inputUsername"
+        class="form-control"
+        placeholder="Username"
+        required
+        autofocus
+      />
+      <br />
       <label for="inputEmail" class="sr-only">Email address</label>
       <input
         type="email"
@@ -64,6 +70,7 @@
         required
         autofocus
       />
+      <br />
       <label for="inputPassword" class="sr-only">Password</label>
       <input
         type="password"
@@ -73,17 +80,30 @@
         required
       />
 
-      
+      <label for="inputPassword" class="sr-only">Confirm Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        class="form-control"
+        placeholder="Confirm Password"
+        required
+      />
 
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me" /> Remember me
+          <!-- <input type="checkbox" value="remember-me" /> Remember me -->
+          already have an <a href="" id="haveAccount">account</a> 
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Sign in
+        Sign Up
       </button>
+      <br />
       <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
+
+
+    <script src="/javascripts/main.js"></script>
+
   </body>
 </html>

@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <link rel="icon" href="/images/favicon.ico" />
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Sign In</title>
 
     <link
       rel="canonical"
@@ -18,7 +18,7 @@
     />
 
     <!-- Bootstrap core CSS -->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet"  />
 
     <!-- Custom styles for this template -->
     <link href="/stylesheets/style.css" rel="stylesheet" />
@@ -46,7 +46,7 @@
 
 
 
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="/login">
       <img
         class="mb-4"
         src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -64,6 +64,7 @@
         required
         autofocus
       />
+      <br>
       <label for="inputPassword" class="sr-only">Password</label>
       <input
         type="password"
@@ -87,3 +88,4 @@
     </form>
   </body>
 </html>
+   
