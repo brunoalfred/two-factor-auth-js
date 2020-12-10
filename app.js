@@ -18,6 +18,8 @@ const usersRouter = require('./routes/users');
 const verifyRouter = require('./routes/verify');
 const registerRouter = require('./routes/register');
 const loginRouter = require('./routes/login');
+const testRouter = require('./routes/test');
+
 
 
 
@@ -44,6 +46,8 @@ app.use('/users', usersRouter);
 app.use('/verify', verifyRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
+app.use('/ping', testRouter);
+
 
 
 
